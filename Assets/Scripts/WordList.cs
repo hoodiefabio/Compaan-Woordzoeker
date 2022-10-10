@@ -6,16 +6,20 @@ using UnityEngine.UI;
 public class WordList : MonoBehaviour
 {
     public List<string> words;
-    string pickedWord;
+    List<string> pickedWords;
     [SerializeField] Text displayText;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        PickRandomWords();
-        displayText.text = pickedWord;
+        
+        foreach (string word in words)
+        {
+            displayText.text = displayText.text + "\n" + word;
+        }
     }
+    
 
     // Update is called once per frame
     void Update()
@@ -25,6 +29,7 @@ public class WordList : MonoBehaviour
 
     void PickRandomWords()
     {
-        pickedWord = words[Random.Range(0, words.Count)];
+       // pickedWords.Add(words[Random.Range(0, words.Count)]);
+       
     }
 }
