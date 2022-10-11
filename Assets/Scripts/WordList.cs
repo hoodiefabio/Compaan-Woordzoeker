@@ -9,7 +9,6 @@ public class WordList : MonoBehaviour
 {
     public List<string> words;
     public int amountOfWords = 3;
-    List<string> pickedWords;
     [SerializeField] Text displayText;
     
 
@@ -36,10 +35,7 @@ public class WordList : MonoBehaviour
         for (int i = 0; i < amount; i++)
         {
             displayText.text = displayText.text + "\n" + words[i];
+           //add function to place word in grid
         }
     }
-
-
-
-
 }

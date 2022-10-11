@@ -616,7 +616,7 @@ MonoBehaviour:
   - lamp
   - stoel
   - tafel
-  amountOfWords: 5
+  amountOfWords: 4
   displayText: {fileID: 866124845}
 --- !u!1 &486401228
 GameObject:
