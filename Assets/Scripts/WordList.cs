@@ -17,6 +17,19 @@ public class WordList : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Big pool of words to choose from
+        words.Add("koets"); words.Add("synergie");
+        words.Add("water"); words.Add("koffie");
+        words.Add("paard"); words.Add("schilder");
+        words.Add("sport"); words.Add("leraar");
+        words.Add("geluid"); words.Add("regen");
+        words.Add("klein"); words.Add("systeem");
+        words.Add("horizon"); words.Add("praten");
+        words.Add("hand"); words.Add("boom");
+        words.Add("storm"); words.Add("boos");
+        words.Add("behang"); words.Add("gevaar");
+        words.Add("spiegel"); words.Add("stoel");
+
         PickRandomWords(amountOfWords);
     }
     
